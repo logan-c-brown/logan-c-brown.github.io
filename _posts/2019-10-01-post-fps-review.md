@@ -12,7 +12,7 @@ tags:
   - Functional Programming
 ---
 
-After jumping into the fundamentals of the Scala programming lanugage, and being somewhat familiar with the Object-Orientated programming paradigm, I decided to investigate the other half of Scala. As a frequenter on Alvin Alexanders blog, http://alvinalexander.com/, a blog containing intuitive Scala how-to's, I decided to read his book Functional Programming Simplified.
+After jumping into the fundamentals of the Scala programming language, and being somewhat familiar with the Object-Oriented programming paradigm, I decided to investigate the other half of Scala. As a regular on Alvin Alexander's blog, http://alvinalexander.com/, a blog containing intuitive Scala how-to's, I decided to read his book Functional Programming Simplified.
 
 <!--more-->
 
@@ -21,7 +21,7 @@ Every chapter in this book gets straight to the point. Most chapters don't last 
 > Most chapters don't last longer than a few pages so there is no excuse to skip pages in each chapter.
 
 
-Compared to other Scala programming books such as Programming in Scala (Odersky) and Programming Scala (Wampler & Payne), which are both very good books in their own regard, the focus of Functional Programming Simplified is to investigate very fundamental functional programming concepts like the functor and monad by building the very small learning blocks through many small chapters. When composed together, the learning blocks form reasons for how functional programming help solve common domain concepts. Eventually after you put many chapters together, you'll see why fuctional programming is a good fit for many domain problems. For example, chapters 28 through 38 focus on recursion, and by the first page of chapter 39, you'll have a good understanding of the difference between the iterative and mutational approach you already know, to the new, concise and recursive functional approach to problem solving. Recursion never felt intuitive for me, and I struggled through it when I inevitably came across it when studying graph-based algorithms. After some time of studying recursion in this book, I had flashbacks to code I had written before that could be substantially improved with pattern matching and recursion.
+Compared to other Scala programming books such as Programming in Scala (Odersky) and Programming Scala (Wampler & Payne), which are both very good books in their own regard, the focus of Functional Programming Simplified is to investigate very fundamental functional programming concepts like the functor and monad by building the very small learning blocks through many small chapters. When composed together, the learning blocks form reasons for how functional programming help solve common domain concepts. Eventually after you put many chapters together, you'll see why functional programming is a good fit for many domain problems. For example, chapters 28 through 38 focus on recursion, and by the first page of chapter 39, you'll have a good understanding of the difference between the iterative and mutational approach you already know, to the new, concise and recursive functional approach to problem solving. Recursion never felt intuitive for me, and I struggled through it when I inevitably came across it when studying graph-based algorithms. After some time of studying recursion in this book, I had flashbacks to code I had written before that could be substantially improved with pattern matching and recursion.
 
 
 > . . . by the first page of chapter 39, you'll have a good understanding of the difference between the iterative and mutational approach you already know, to the new, concise and recursive functional approach.
@@ -36,5 +36,8 @@ Functional programming might seem like a meme paradigm to some. To the naysayers
 > . . . if you were to ever use functional programming anywhere in your codebase, starting by tracking errors and state functionally nearly forces you to track them methodologically
 
 
-Functional Programming Simplified is by no means an intro to Scala book, so coming with a background of a little bit of Scala knowledge will help significantly. If you are interested in learning Haskell at some point, and are already very knowedgeable about other programming paradigms, learning some functional basics through this book is a good start. For those already invested into functional programming, Practical Haskell or Functional Programming in Scala (the big red book) are better bets for you. 
+Functional Programming Simplified is by no means an intro to Scala book, so coming with a background of a little bit of Scala knowledge will help significantly. If you are interested in learning Haskell at some point, and are already very knowledgeable about other programming paradigms, learning some functional basics through this book is a good start. For those already invested into functional programming, Practical Haskell or Functional Programming in Scala (the big red book) are better bets for you.
+
+
+
 
