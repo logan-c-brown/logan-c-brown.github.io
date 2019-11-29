@@ -15,7 +15,7 @@ tags:
 ---
 
 This is the first problem in a series of simple problems, written in Haskell. I regularly use rosettacode.com to find out different ways haskell solves problems, but it lacks thorough explanations that are useful to get a thorough understanding why specific functions and patterns are used in a Haskell solution. This post will focus on the following problem.
-Given a random number, allow a user to guess the random number within five chances to guess. 
+Given a random number, allow a user to guess the random number with five chances to guess. 
 
 <!--more-->
 
@@ -41,7 +41,10 @@ The above code snippet is haskell record syntax, and it's about the closest you 
 
 One note to make before proceeding is that haskell doesn't have while loops. It doesn't have for loops either.
 Just so we can get our hands wet, here is a haskell solution of the problem above without any looping at all, just recursion.
-When designing functional programs, its a good idea to isolate all your pure functions as much as *functionally* possible. IO is not pure because something outside of our program can affect your programs execution. Having a function that return IO does not make a function pure, but it makes it obviously impure -- this oviousness is helpful for individuals trying to use your Haskell libraries. 
+When designing functional programs, its a good idea to isolate all your pure functions as much as *functionally* possible. This makes test creation, debugging, and functional composition easier.
+As an aside --
+
+>IO is not pure because something outside of our program can affect your programs execution. Having a function that return IO does not make a function pure, but it makes it obviously impure -- this obviousness is helpful for individuals trying to use your Haskell libraries. 
 
 ## Solution by Recursion
 
@@ -112,7 +115,7 @@ With the layout of our new `runGame` function, it became less boiler-platey beca
 This method is a bit nicer, but now we need to keep track of all the intermediary results. If by some cruel chance some ML model (read: intern) was delegated to guess a number between one and one trillion, for the sake of performance, discarding prior program states will help the cause.
 
 ## I Kind of Lied
-So I lied when I said Haskell did not have any for loops, sort of. Conveniently, it's possible to replicate while and for loop functionality with `iterate`. Again, because we are interacting with IO, we will use `iterateUntilM` from `monad-loops`.
+So I lied when I said Haskell did not have any for loops, sort of. Conveniently, it's possible to replicate while and for loop functionality with `iterate` or `until`. Again, because we are interacting with IO, we will use `iterateUntilM` from `monad-loops`.
 
 {% highlight haskell %}
 stateCheck :: GameState -> Bool
