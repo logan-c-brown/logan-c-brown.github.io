@@ -44,7 +44,7 @@ Just so we can get our hands wet, here is a haskell solution of the problem abov
 When designing functional programs, its a good idea to isolate all your pure functions as much as *functionally* possible. This makes test creation, debugging, and functional composition easier.
 As an aside --
 
->IO is not pure because something outside of our program can affect your programs execution. Having a function that return IO does not make a function pure, but it makes it obviously impure -- this obviousness is helpful for individuals trying to use your Haskell libraries. 
+>IO is not pure because something outside of the program can affect the programs execution. Having a function that return IO does not make a function pure, but it makes it obviously impure -- this obviousness is helpful for individuals trying to use your Haskell libraries or modify your Haskell code. 
 
 ## Solution by Recursion
 
@@ -87,7 +87,8 @@ Looking at this code you might think that this is a lot of code for some pretty 
 Thinking a bit about the problem, all the recursive function is doing is generating a bunch (read: List) of possible values, and then taking the final value in that list. This sounds just the opposite of a `foldr` which takes a list and smashes the list down into a single value. In fact, Haskell has just this function, and it is aptly named `unfoldr`. 
 `unfoldr` takes a seed and generates a list from that seed based on a function that returns a monadic type so that unfoldr knows when to stop. Because we are interacting with IO, we will use `unfoldrM` from the `monad-loops` package.
 
-Here is an implementation of the main function using `unfoldrM`.  `runGame` is modified to accept the type argument of `unfoldrM` which is `unfoldrM :: Monad m => (a -> m (Maybe (b, a))) -> a -> m [b]`:
+Here is an implementation of the main function using `unfoldrM`.  `runGame` is modified to accept the type arguments of `unfoldrM` which is 
+`Monad m => (a -> m (Maybe (b, a))) -> a -> m [b]`
 
 {% highlight haskell %}
 runGame :: GameState -> IO (Maybe (PlayerChoice, GameState))
@@ -130,7 +131,7 @@ runGame gs@GameState { iteration = i, randNum = rand } =
 main :: IO ()
 main = do ( rand :: Int ) <- randomRIO (0,10)
           let initialState = GameState { iteration = 0, choiceState = Incorrect, randNum = rand }
-          attempt <- iterateUntilM stateCheck runGame3 initialState
+          attempt <- iterateUntilM stateCheck runGame initialState
           case choiceState attempt of 
             Correct   -> putStrLn $ "You correctly guessed the number: " ++ show rand
             _         -> putStrLn $ "None of the guesses were correct, the actual number was: " ++ show rand
