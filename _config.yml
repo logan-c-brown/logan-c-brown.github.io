@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: loganbrown.dev
-email:
+email: logan@loganbrown.dev
 description: >- # this means to ignore newlines until "baseurl:"
   Logan Brown, an engineer of fine data
 twitter_username: logan_c_brown
@@ -62,9 +62,9 @@ author:
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Just some dude who is interested in data, the cases we can make with it, and the way we compute it. "
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://loganbrown.dev"
+    - label: "Contact"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:logan@loganbrown.dev"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/logan_c_brown"

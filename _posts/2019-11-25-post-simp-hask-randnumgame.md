@@ -14,7 +14,7 @@ tags:
   - Functional Programming
 ---
 
-This is the first problem in a series of simple problems, written in Haskell. I regularly use rosettacode.com to find out different ways haskell solves problems, but it lacks thorough explanations that are useful to get a thorough understanding why specific functions and patterns are used in a Haskell solution. This post will focus on the following problem.
+This is the first problem in a series of simple problems, written in Haskell. I regularly use [rosettacode.org](http://rosettacode.org/wiki/Rosetta_Code) to find out different ways haskell solves problems, but it lacks thorough explanations that are useful to get a thorough understanding why specific functions and patterns are used in a Haskell solution. This post will focus on the following problem.
 Given a random number, allow a user to guess the random number with five chances to guess. 
 
 <!--more-->
