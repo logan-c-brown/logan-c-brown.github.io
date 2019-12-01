@@ -69,8 +69,14 @@ runGame gs@GameState {iteration = i, choiceState = attempt, randNum = rand } =
                         runGame gs { iteration = nextIter, choiceState = nextPlay }
 {% endhighlight %}
 
-We are missing one final function to run our random number guesser game, and that is a main function to generate the random number and use the state function we created above. Here we jump inside IO and assign a random integer to `rand`, then we initialize our state, and recursively ask the player for a random number until they have either guessed correctly, or exhasted their tries which is the `case` pattern matching at the end of the function.
+We are missing one final function to run our random number guesser game, and that is a main function to generate the random number and use the state function we created above. 
+\\
+\\
+We will use an extension here ScopedTypeVariables which can be imported in ghci as `:set -XScopedTypeVariables`. This allows us to ensure the value generated from the random generator is an Int, and not a Bool or something else. This is seen in the syntax `rand :: Int` inside of the function. We will use this extension for the rest of the examples.
 
+> Extensions in Haskell are add-ons to the compiler that can help drastically simplify code in certain situations through sytactic sugaring, or even restructing of the type system. However, they are not always helpful in every scenario, so it is up to the programmer to justify when one should be used or not.
+
+Here we jump inside IO and assign a random integer to `rand`, then we initialize our state, and recursively ask the player for a random number until they have either guessed correctly, or exhasted their tries which is the `case` pattern matching at the end of the function.
 
 {% highlight haskell %}
 main :: IO ()
@@ -211,4 +217,4 @@ Your choice is now Correct
 You correctly guessed the number: 3
 {% endhighlight %}  
 
-This final example wraps up our simple random number game. Its possible to roll in custom type classes for Ordering on `PlayerChoice`, and even use the offical `State` monad, but this implementation is simple with only one import and no GHC extensions. LambdaCase and Lenses are possible other areas of improvement.
+This final example wraps up our simple random number game. It's possible to roll in custom type classes for Ordering on `PlayerChoice`, and even use the offical `State` monad, but this implementation is simple with only one import and one extension. LambdaCase is another possible useful extension, as well as using `randomR` instead of `randomRIO` and splitting `runGame` into its pure and impure constituents.
