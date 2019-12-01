@@ -74,7 +74,7 @@ We are missing one final function to run our random number guesser game, and tha
 \\
 We will use an extension here ScopedTypeVariables which can be imported in ghci as `:set -XScopedTypeVariables`. This allows us to ensure the value generated from the random generator is an Int, and not a Bool or something else. This is seen in the syntax `rand :: Int` inside of the function. We will use this extension for the rest of the examples.
 
-> Extensions in Haskell are add-ons to the compiler that can help drastically simplify code in certain situations through sytactic sugaring, or even restructing of the type system. However, they are not always helpful in every scenario, so it is up to the programmer to justify when one should be used or not.
+> Extensions in Haskell are add-ons to the compiler that can help drastically simplify code in certain situations through sytactic sugaring, or even restructuring of the type system. However, they are not always helpful in every scenario, so it is up to the programmer to justify when one should be used or not.
 
 Here we jump inside IO and assign a random integer to `rand`, then we initialize our state, and recursively ask the player for a random number until they have either guessed correctly, or exhasted their tries which is the `case` pattern matching at the end of the function.
 
