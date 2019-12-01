@@ -217,4 +217,4 @@ Your choice is now Correct
 You correctly guessed the number: 3
 {% endhighlight %}  
 
-This final example wraps up our simple random number game. It's possible to roll in custom type classes for Ordering on `PlayerChoice`, and even use the offical `State` monad, but this implementation is simple with only one import and one extension. LambdaCase is another possible useful extension, as well as using `randomR` instead of `randomRIO` and splitting `runGame` into its pure and impure constituents.
+This final example wraps up our simple random number game. It's possible to roll in custom type classes for Ordering on `PlayerChoice`, and even use the offical `State` monad, but this implementation is simple with only one import and one extension. LambdaCase is another possible useful extension, as well as using `randomR` instead of `randomRIO` and splitting `runGame` into its pure and impure constituents. The biggest missing functionality still left to do is validating user input, so that the program does not crash when a user enters "four" as input. This functionality will be reserved for a future Simple Haskell post on error handling.
