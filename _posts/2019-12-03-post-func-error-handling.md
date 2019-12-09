@@ -122,7 +122,7 @@ parseLogTime timestamp = parseTimeM True defaultTimeLocale "%Y %b  %-d %T" times
 transformLog :: KernelLog -> Maybe ParsedLog
 transformLog KernelLog { timestamp,  machine, uptime, event, message} =
     do logDate <- parseLogTime $ "2019 " ++ timestamp
-       time <- readMaybe uptime :: Maybe Double
+       time    <- readMaybe uptime :: Maybe Double
        return $ ParsedLog { date = logDate
                           , machineName = machine
                           , time = uptime
@@ -167,7 +167,7 @@ Now just the final parsing to a cpu log is left. `WriteMode` is the `IOMode` of 
 
 {% highlight haskell %}
 cpuLogWrite :: CpuLog -> FilePath -> IO ()
-cpuLogWrite log dirr = withFile ( cpuLogFilePath log dirr) WriteMode
+cpuLogWrite log dirr = withFile ( cpuLogFilePath log dirr) AppendMode
                              (`hPrint` log)
 {% endhighlight %}
 > *quaere*: Could you type check to ensure writing to a file will always result in the file being written?
