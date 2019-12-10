@@ -243,7 +243,7 @@ main = do
 In the above snippet, if there is an error with the input, a message is printed to the command line and the error is thrown just as you would in Java. It's important to note that the code reserved throwing errors for only truly exeptional program behavior, and execution paths that cannot be recovered from. `Maybe` and `Either` were used in placed where program execution may not have been successful, and possible unsuccessful program states (which is `Nothing` for `Maybe` and `Left` for `Either` in our scenario) are tracked until they are considered unrecoverable.
 
 ## Part II
-This wraps up the first version of the log parser, but there are a few goofy looking parts of the code. Noteably by the use of regular expressions, and organization of models. Given all our time spent parsing logs, it would by nice to put them into a more universal format such as JSON. In addition, we can add more functionality limit code exposure to keep opening and closing files, and add more program exception states.
+This wraps up the first version of the log parser, but there are a few goofy looking parts of the code. Noteably by the use of regular expressions, and organization/structure of the log models. Given all our time spent parsing logs, it would be a convenient time to put them into a more universal format such as JSON so other applications can more easily read them in. In addition, limiting the repetitious opening and closing of files should offer a generous speedup, and adding more program exception states will help document failure points of the application.
 
 
 
