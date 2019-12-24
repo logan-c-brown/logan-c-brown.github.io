@@ -1,5 +1,5 @@
 ---
-title: "Tech Lit. Review: Functional Programming Simplified"
+title: "Thoughts after Reading: Functional Programming Simplified"
 excerpt_separator: "<!--more-->"
 categories:
   - Literature Review

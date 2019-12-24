@@ -1,5 +1,5 @@
 ---
-title: "Tech Lit. Review: Programming Scala 2nd Edition (O'Reilly)"
+title: "Thoughts after Reading: Programming Scala 2nd Edition (O'Reilly)"
 excerpt_separator: "<!--more-->"
 categories:
   - Literature Review

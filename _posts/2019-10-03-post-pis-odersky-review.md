@@ -1,5 +1,5 @@
 ---
-title: "Tech Lit. Review: Programming in Scala 3rd Edition (artima)"
+title: "Thoughts after Reading: Programming in Scala 3rd Edition (artima)"
 excerpt_separator: "<!--more-->"
 categories:
   - Literature Review
