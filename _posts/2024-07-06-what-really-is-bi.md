@@ -31,23 +31,23 @@ Being a successful BIE is about fitting into the gaps in the business to reveal 
 > a BIE will appear as many job families to help build products to enable the business make better decisions -- thats the only goal of a BIE.
 
 
-As a result, the technical skill level and variety varies greatly between any given BIE. As a baseline, all BIEs can write SQL, run a linear regression, and plot a graph in excel, but all have large variations in other skills that are regularly used in their roles. Given the roles and responsibilities of BI can be so diverse, what can be done to become a successful BIE in a role that prioritizes breadth over depth? 
+As a result, the technical skill level and variety varies greatly between any given BIE. As a baseline, all BIEs can write SQL, run a linear regression, and plot a graph in excel, but all BIEs have large variations in other skills that are regularly used in their roles. Given the roles and responsibilities of BI can be so diverse, what can be done to become a successful BIE in a role that prioritizes breadth over depth? 
 
 
-A successful BIE strategy requires a set of core principles to better guide the BI process and improve business outcomes. Work backwards from the "so that" -- we'll call this the "so that" principle. 
+A successful BIE strategy needs a set of core principles more than any other job family because of the wide breadth in the responsibilties of a BIE compared to other job families. To reduce the ambiguity of responsibilties and improve outcomes of BI, make the objective of the BI outcome clearly connected to the business outcome. Every objective should be stated as "we are building X *so that* the business outcome for Y is improved". Work backwards from the "so that" outcome -- we'll call this the "so that" principle. 
 
 
 ## The "so that" principle 
 
-Every objective in BI should reach back to a business goal. The business goal follows from the "so that", and every discussion of any BI goal can be placed within the "so that" context. If the statement following "so that" does not end with a clearly aligned business goal then the goal is the wrong goal. Below are listed various "so that" statements. One statement can even have multiple, consecutive "so that"s. I've left some of these intentionally ambiguou so you can fill in and follow up with more "so that" statements. 
+Every objective in BI should work backwards from a business goal. The business goal follows the "so that" statement, and every discussion of any BI goal should be placed within the "so that" context. If the statement following "so that" does not end with a clearly aligned business goal then the goal *is the wrong goal*. Below are listed various "so that" statements. One statement can even have multiple, consecutive "so that"s, the longer the chain of "so that"s, the less connected the BI objective is with business outcomes. I've left some of these intentionally ambiguous so you can fill in and follow up with more "so that" statements. 
 
 
 - This dashboard monitors weekly sales *so that* the sales team can adjust their weekly goals.
-- This pipelines calculates the difference between prediction and actuals *so that* we can identify defects in modeling *so that* the modeling team can take action an improve the predictions so that
+- This pipelines calculates the difference between prediction and actuals *so that* we can identify defects in modeling *so that* the modeling team can take action and improve the predictions
 - This model classifies reviews into good and bad sentiments *so that* we can build software to summarize reviews for customers *so that* customers can spend less time determining if the product is a good fit for them *so that* the customer experience is improved because shoppers don't like wasting time looking at things they don't want. 
 
 
 The intial problem I had was how to define BI, how do I explain to people what I do, and how does the BI role show value in what, on paper, looks ambiguous. The "so that" principle is an expression exactly thereof. I write pipelines so that . . . , I create metrics so that . . . , I make dashboards so that . . .
 
-All of these "so that" statements that I have solved thus far have been different from one to the next, and many don't share nearly any similarity between the two. The next time someone asks me what I do, Im going to tell them that last "so that"-business problem. 
+All of these "so that" statements that I have solved thus far have been different from one to the next, and many don't share nearly any similarity between the one before it. The next time someone asks me what I do, Im going to tell them that last "so that" business problem. 
 
