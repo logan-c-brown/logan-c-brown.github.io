@@ -114,9 +114,5 @@ tag_archive:
   path: /tags/
 
 
-# Analytics
-analytics:
-  provider               : google # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          : UA-154968027-1
-    anonymize_ip         : true #, false (default)
+# google analytics 4
+google_analytics: G-MW0N81FQ89
